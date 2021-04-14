@@ -60,7 +60,7 @@ add_arg('arc_margin', float, 0.15, "arc margin.")
 add_arg('arc_easy_margin', bool, False, "arc easy margin.")
 add_arg('enable_ce', bool, False, "If set True, enable continuous evaluation job.")
 # yapf: enable
-
+paddle.enable_static()
 model_list = [m for m in dir(models) if "__" not in m]
 
 

@@ -38,6 +38,7 @@ add_arg('image_shape', str, "3,224,224", "Input image size.")
 add_arg('use_gpu', bool, True, "Whether to use GPU or not.")
 add_arg('pretrained_model', str, None, "Whether to use pretrained model.")
 # yapf: enable
+paddle.enable_static()
 
 model_list = [m for m in dir(models) if "__" not in m]
 

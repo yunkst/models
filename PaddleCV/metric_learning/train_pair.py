@@ -61,7 +61,7 @@ add_arg('samples_each_class', int, 2, "samples_each_class.")
 add_arg('margin', float, 0.1, "margin.")
 add_arg('npairs_reg_lambda', float, 0.01, "npairs reg lambda.")
 # yapf: enable
-
+paddle.enable_static()
 model_list = [m for m in dir(models) if "__" not in m]
 
 
